@@ -1,0 +1,19 @@
+{
+  "name": "xcrawl-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for XCrawl Web Scraping Proxy — scrape web pages from the command line",
+  "main": "bin/xcrawl.js",
+  "bin": {
+    "xcrawl": "bin/xcrawl.js"
+  },
+  "scripts": {
+    "postinstall": "node -e \"try{require('fs').chmodSync('bin/xcrawl.js', '755')}catch(e){}\""
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "axios": "^1.7.0"
+  },
+  "keywords": ["xcrawl", "web-scraping", "cli", "scraper", "proxy"],
+  "license": "MIT",
+  "files": ["bin/", "README.md"]
+}
